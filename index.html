@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="main"></div>
+    <div class="new">
+      <button id="add-book-btn">Add new Book</button>
+    </div>
+    <dialog id="add-book-dialog">
+      <form action="submit" id="new-book-form">
+        <label for="title-input">Title</label>
+        <input type="text" name="title" id="title-input" />
+        <label for="author-input">Author</label>
+        <input type="text" name="author" id="author-input" />
+        <label for="pages-input">Pages</label>
+        <input type="number" name="pages" id="pages-input" />
+        <label for="read-checkbox">Read?</label>
+        <input type="checkbox" name="read" id="read-checkbox" />
+        <button type="submit" id="save-book-btn">Save Book</button>
+      </form>
+    </dialog>
     <script src="script.js"></script>
   </body>
 </html>
